@@ -42,7 +42,7 @@ export const useFetchData = (url: string, uid: string) => {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await fetch(`https://${baseUrl}/${url}/${uid}`);
+          const response = await fetch(`${baseUrl}/${url}/${uid}`);
           const data = await response.json();
   
           if (!response.ok) {
