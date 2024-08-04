@@ -38,7 +38,6 @@ export const useFetchData = (url: string, uid: string) => {
     const [data, setData] = useState<IFilm[]>([]);
     const [isLoading, setIsLoading] = useState(true);
     
-  
     useEffect(() => {
       const fetchData = async () => {
         try {
