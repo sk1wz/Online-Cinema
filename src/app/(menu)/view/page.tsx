@@ -31,7 +31,7 @@ export default function ViewPage({searchParams} : {searchParams?:{query?: string
 
   const handleFavorite = async(filmId: number) =>{
     try {
-      const {data} = await axios.post('https://6bc124b994bfc1e1.mokky.dev/favorites',{
+      const {data} = await axios.post('api_key',{
         filmId: filmId
       });
       console.log(data)
