@@ -1,8 +1,9 @@
 
 // Хранилище
 import { create } from 'zustand';
+import { IFilm } from '@/Interfaces/AllInterfaces';
 
-interface PostState {
+interface FilmState {
     films: IFilm[];
     setFilms: (newFilms: IFilm[]) => void;
 }
